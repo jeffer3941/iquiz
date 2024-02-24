@@ -26,7 +26,7 @@ class QuestionViewController: UIViewController {
         
         if (numberOfQuesions < questions.count - 1) {
             numberOfQuesions += 1
-            questionConfig()
+            Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(questionConfig), userInfo: nil, repeats: false)
         }
         
     }
@@ -45,7 +45,7 @@ class QuestionViewController: UIViewController {
         }
     }
     
-    func questionConfig() {
+    @objc func questionConfig() {
         titleQuestion.numberOfLines = 0
         titleQuestion.textAlignment = .center
         titleQuestion.text = questions[numberOfQuesions].title
