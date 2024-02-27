@@ -27,10 +27,15 @@ class QuestionViewController: UIViewController {
         if (numberOfQuesions < questions.count - 1) {
             numberOfQuesions += 1
             Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(questionConfig), userInfo: nil, repeats: false)
+        } else {
+            navigateToPerformanceScreen()
         }
         
     }
     
+    func navigateToPerformanceScreen () {
+        performSegue(withIdentifier: "goToPerformanceScreen", sender: nil)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,5 +61,10 @@ class QuestionViewController: UIViewController {
             alternative.backgroundColor = UIColor(red: 116/255, green: 50/255, blue: 255/255, alpha: 1.0)
             
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let performanceVc = segue.destination as? PerformanceViewController else { return }
+        performanceVc.percentagenPerformance = point
     }
 }

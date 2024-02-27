@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0A40E1412B75A8AD00FAFEB7 /* Questions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A40E1402B75A8AD00FAFEB7 /* Questions.swift */; };
+		0A770FAF2B8A9D7800B24D49 /* PerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A770FAE2B8A9D7800B24D49 /* PerformanceViewController.swift */; };
 		0AB232CB2B73E76A005B960F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB232CA2B73E76A005B960F /* AppDelegate.swift */; };
 		0AB232CD2B73E76A005B960F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB232CC2B73E76A005B960F /* SceneDelegate.swift */; };
 		0AB232CF2B73E76A005B960F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AB232CE2B73E76A005B960F /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		0A40E1402B75A8AD00FAFEB7 /* Questions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Questions.swift; sourceTree = "<group>"; };
+		0A770FAE2B8A9D7800B24D49 /* PerformanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerformanceViewController.swift; sourceTree = "<group>"; };
 		0AB232C72B73E76A005B960F /* iQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0AB232CA2B73E76A005B960F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0AB232CC2B73E76A005B960F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 				0AB232D82B73E76E005B960F /* Info.plist */,
 				0AB232FA2B743E99005B960F /* QuestionViewController.swift */,
 				0A40E1402B75A8AD00FAFEB7 /* Questions.swift */,
+				0A770FAE2B8A9D7800B24D49 /* PerformanceViewController.swift */,
 			);
 			path = iQuiz;
 			sourceTree = "<group>";
@@ -269,6 +272,7 @@
 				0AB232FB2B743E99005B960F /* QuestionViewController.swift in Sources */,
 				0A40E1412B75A8AD00FAFEB7 /* Questions.swift in Sources */,
 				0AB232CD2B73E76A005B960F /* SceneDelegate.swift in Sources */,
+				0A770FAF2B8A9D7800B24D49 /* PerformanceViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +449,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NVRCCW4XR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iQuiz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -472,6 +477,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5NVRCCW4XR;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = iQuiz/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

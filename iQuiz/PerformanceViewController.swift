@@ -8,22 +8,32 @@
 import UIKit
 
 class PerformanceViewController: UIViewController {
-
+    
+    var percentagenPerformance: Int?
+    
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    @IBOutlet weak var percentageLabel: UILabel!
+    
+    @IBOutlet weak var restartButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        screenConfig()
+        performanceConfig()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func screenConfig() {
+        navigationItem.hidesBackButton = true
+        restartButton.layer.cornerRadius = 12.0
+            
     }
-    */
+    
+    func performanceConfig() {
+        guard let point = percentagenPerformance else {return}
+        resultLabel.text = "Você acertou \(point) de \(questions.count) questões."
+        let percentage = (point * 100) / questions.count
+        percentageLabel.text = "Percentual final: \(percentage)%"
+    }
 
 }
